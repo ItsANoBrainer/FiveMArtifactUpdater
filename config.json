@@ -1,0 +1,11 @@
+{
+    "artifactsURL": "https://runtime.fivem.net/artifacts/fivem/build_server_windows/master",
+    "artifactsDirectory": "../artifacts/",
+    "webscrapeDirectory": "./webscrape/",
+    "zipDirectory": "./artifacts-zipped/",
+    "zipFileName": "server.7z",
+    "downloadType": "latest",
+    "buildSpecific": null,
+    "verbose": false,
+    "allowPrompt": true
+}
