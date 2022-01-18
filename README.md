@@ -3,7 +3,7 @@
 
 [![N|Solid](https://i.imgur.com/sfDPQf9.png)](https://nodejs.org/)
 
-FiveM Artifact Updater is an application created with Node.JS to easily and quickly install/update your artifacts with the click of a button. No more are the days of needing to manually navigate to the Artifacts Site, download whatever version, unzip and replace your files. This tool does all that for you, and more with config file to tune it to your liking, as well as support for replacing all config file items with command line arguments for on the fly usage.
+FiveM Artifact Updater is an application created with Node.JS to easily and quickly install/update your artifacts with the click of a button. No more are the days of needing to manually navigate to the Artifacts Site, download whatever version, unzip and replace your files. This tool does all that for you, and more with config file to tune it to your liking, as well as support for replacing all config file items with command line arguments for on the fly usage. It will also clean up after itself afterwards!
 
 ## Features
 - Ability to install the latest, recommended, newest, or custom FiveM build with a single click
@@ -58,9 +58,21 @@ This works for any and all keys in the `config.json`:
 
 ## Tech
 - [Node.JS](https://nodejs.org/en/) - evented I/O for the backend
+- 
+### How it Works
+This was a great personal project not only for my use case (needing to easily and quickly update my servers artifacts), but also to spend more time learning Javascript and some new Node.JS modules. Here is what it does:
+
+1. Scrape the Webpage - Using `web-scrape` we download the artifacts url source page
+2. Parse the DOM - Using `node-html-parser` we parse the webscraped html for the URL of the build we want
+3. Download New Artifacts - Using `https` we download the `server.7z` from the webscraped url
+4. Delete Current Artifacts - If they exist, we use `fs` to delete the current artifacts
+5. Extract `server.7z` - Using `7zip-bin` and `node-7z` we extract the `server.7z` files into our artifacts folder 
+6. Cleanup - Using `fs` we delete everything we downloaded, including the webscrape and `server.zip`
 
 ## Development
-Want to contribute? Great! Use the Issues and Pull Request section appropriately.
+Want to contribute? Great! 
+
+This is an application for competant people who can follow directions. If you know what you're doing and are encountering issues, use the Issues and Pull Request section appropriately.
 
 ## Change Log
 ### v1.0
