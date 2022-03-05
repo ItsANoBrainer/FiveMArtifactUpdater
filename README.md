@@ -1,4 +1,7 @@
 # ItsANoBrainer
+
+If you like or use this application, please consider supporting by starring the repo and checking out my other resources.
+
 ## _FiveM Artifact Updater_
 
 [![N|Solid](https://i.imgur.com/sfDPQf9.png)](https://nodejs.org/)
