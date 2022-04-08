@@ -58,7 +58,7 @@ This works for any and all keys in the `config.json`:
 ### How it Works
 This was a great personal project not only for my use case (needing to easily and quickly update my servers artifacts), but also to spend more time learning Javascript and some new Node.JS modules. Here is what it does:
 
-1. Reuqest - Use a get request with the cfx changelog api endpoint to get the url for the artifact build we want
+1. Request - Use a get request to the cfx changelog api endpoint to get the url for the artifact build we want
 2. Download New Artifacts - Using `axios` we download the `server.zip` from the request url
 3. Delete Current Artifacts - If they exist, we use `fs` to delete the current artifacts
 4. Extract `server.zip - Using `node-stream-zip` we extract the `server.zip` files into our artifacts folder 
@@ -79,7 +79,6 @@ This is an application for competant people who can follow directions. If you kn
 * Moved download from https to axios
 * Removed buildSpecific option as the new method does not support it. Use v1.0.0 if you really need it.
 * 50% less lines, 28% less characters
-
 
 ### v1.0.0
 * Initial Release 
