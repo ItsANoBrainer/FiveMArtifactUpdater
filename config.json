@@ -3,6 +3,7 @@
     "artifactsDirectory": "../artifacts/",
     "zipDirectory": "./artifacts-zipped/",
     "zipFileName": "server.7z",
+	"downloadType": "latest",
     "verbose": false,
     "allowPrompt": true
 }
