@@ -9,11 +9,10 @@
   "author": "ItsANoBrainer",
   "license": "ISC",
   "dependencies": {
-    "7zip-bin": "^5.1.1",
-    "node-7z": "^3.0.0",
-    "node-html-parser": "^5.1.0",
+    "axios": "^0.26.1",
+    "fs": "^0.0.1-security",
+    "node-stream-zip": "^1.15.0",
     "nodejs-file-downloader": "^4.7.4",
-    "prompt-sync": "^4.1.6",
-    "website-scraper": "^4.2.3"
+    "prompt-sync": "^4.2.0"
   }
 }
