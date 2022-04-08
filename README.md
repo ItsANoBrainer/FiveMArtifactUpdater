@@ -71,6 +71,7 @@ This is an application for competant people who can follow directions. If you kn
 
 ## Change Log
 ### v2.0.0
+No longer uses webscraping at all, now uses the cfx changelog api endpoint. This endpoint has the artifacts bundled as a .zip instead of .7z as well, which allowed for lowering the package size by over 92% (1.53mb instead of 21.8mb). 
 * Refactored codebase, use new system for getting artifacts url, downloading, and extracting
 * Removed webscrape dependency
 * Removed html parser dependency
