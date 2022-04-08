@@ -57,7 +57,7 @@ This works for any and all keys in the `config.json`:
 
 ## Tech
 - [Node.JS](https://nodejs.org/en/) - evented I/O for the backend
-- 
+
 ### How it Works
 This was a great personal project not only for my use case (needing to easily and quickly update my servers artifacts), but also to spend more time learning Javascript and some new Node.JS modules. Here is what it does:
 
