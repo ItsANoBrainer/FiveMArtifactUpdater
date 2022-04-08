@@ -36,10 +36,7 @@ node index.js -allowPrompt false
 This works for any and all keys in the `config.json`:
 - artifactsURL `<url>` | URL to webscrape from
 - artifactsDirectory `<directoryName>` | Directory to place the unzipped artifacts
-- zipDirectory `<directoryName>` | Directory to place the zip
-- zipFileName `<fileName>` | Name of the downloaded artifacts file
-- downloadType `<type>` | Which dynamic build to pull. Supports `specific`/`custom` for `buildSpecific` section below, `newest`/`latest` for the newest build, `optional` for the optional build, and `recommended` for the recommended build
-- buildSpecific `<5000>` | Use a specific build number. `downloadType` must be `custom` or `specific` to use this 
+- downloadType `<type>` | Which dynamic build to pull. Supports `latest` for the newest build, `optional` for the optional build, and `recommended` for the recommended build, and `critical` for whatever thats for
 - verbose `<true/false>` | Show more console logging 
 - allowPrompt `<true/false>` | Prompt the user for input before starting and doing important things
 
